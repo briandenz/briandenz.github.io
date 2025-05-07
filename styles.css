@@ -1,0 +1,231 @@
+/* --- Base Styles & Fonts --- */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern, clean sans-serif for general text */
+    line-height: 1.7;
+    color: #333; /* Dark gray for readability */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc; /* Light, neutral background */
+    font-weight: 300;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif; /* A slab serif for headings - stable, sophisticated */
+    font-weight: 700;
+    color: #1D3557; /* Deep, stable blue */
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.2em;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.3em;
+    position: relative;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #457B9D; /* Slightly lighter, sophisticated blue */
+    margin-bottom: 0.3em;
+}
+
+p {
+    margin-bottom: 1em;
+    color: #555;
+}
+
+a {
+    color: #E63946; /* Memphis-inspired red for links */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Header --- */
+header {
+    background-color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 5px solid #1D3557; /* Stable blue bottom border */
+    position: relative;
+    overflow: hidden; /* To contain absolute positioned shapes */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.header-content h1 {
+    color: #1D3557;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #4A4A4A;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+/* Memphis-inspired header shapes */
+.header-shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+    z-index: 0;
+}
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.shape-yellow {
+    background-color: #FDCB6E; /* Softer, sophisticated Yellow */
+    clip-path: circle(50% at 0% 100%); /* Quarter circle bottom left */
+    bottom: -20px;
+    left: -20px;
+}
+
+.shape-blue {
+    background-color: #A8DADC; /* Light, airy Blue/Teal */
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%); /* Triangle top right */
+    top: -30px;
+    right: -30px;
+    width: 120px;
+    height: 120px;
+}
+
+
+/* --- Sections --- */
+section {
+    background-color: #fff;
+    padding: 30px 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.07);
+    position: relative;
+}
+
+.section-title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+/* Small geometric accent next to section titles */
+.geometric-accent {
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+.accent-red { background-color: #E63946; /* Memphis Red */ }
+.accent-blue { background-color: #457B9D; /* Sophisticated Blue */ }
+.accent-yellow { background-color: #FDCB6E; /* Softer Yellow */ }
+
+
+/* --- Specific Sections --- */
+#expertise .skills-list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+#expertise .skills-list li {
+    background-color: #f7f9fc;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-weight: 400;
+    color: #1D3557;
+    border-left: 4px solid #A8DADC; /* Light Teal accent */
+}
+
+.project-card {
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    border-left: 5px solid #FDCB6E; /* Yellow accent for project cards */
+}
+.project-card:last-child {
+    margin-bottom: 0;
+}
+.project-subtitle {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+}
+
+/* --- Contact Section --- */
+.contact-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: #fff !important; /* Ensure text is white */
+    font-weight: 600;
+    text-align: center;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.contact-button:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.button-blue { background-color: #1D3557; /* Stable Blue */ }
+.button-yellow { background-color: #F1C40F; color: #333 !important; /* Darker text for yellow */ }
+.button-red { background-color: #E63946; /* Memphis Red */ }
+
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 40px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    .header-shape { /* Hide or simplify shapes on smaller screens */
+        display: none;
+    }
+    .contact-links {
+        flex-direction: column;
+    }
+    .contact-button {
+        width: 100%;
+        box-sizing: border-box; /* Ensure padding doesn't break layout */
+    }
+}
