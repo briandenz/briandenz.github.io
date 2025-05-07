@@ -3,77 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Professional Profile</title>
+    <title>Your Name - Blog/Posts</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="header-content">
-                <h1>Your Name</h1>
-                <p class="tagline">Analytical Problem Solver | Data-Driven Insights | Insurance Technology Enthusiast</p>
-            </div>
-            <div class="header-shape shape-yellow"></div>
-            <div class="header-shape shape-blue"></div>
+    <div class="page-container">
+        <header class="site-header">
+            <h1>Your Name</h1>
+            <p class="tagline">Analytical Problem Solver | Data-Driven Insights | Insurance Technology Enthusiast</p>
         </header>
 
-        <main>
-            <section id="about">
-                <div class="section-title-container">
-                    <span class="geometric-accent accent-red"></span>
-                    <h2>About Me</h2>
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <div class="sidebar-sticky-content">
+                    <div class="sidebar-accent shape-yellow"></div>
+                    <nav class="sidebar-nav">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html" class="active">Posts/Home</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar-info">
+                        <h4>Quick Info</h4>
+                        <p>Focused on leveraging technology for impactful solutions in the insurance sector.</p>
+                        <a href="mailto:youremail@example.com" class="sidebar-email">youremail@example.com</a>
+                    </div>
                 </div>
-                <p>Hello! I'm a [Your Profession/Aspiration, e.g., results-oriented professional] passionate about leveraging data and technology to drive efficiency and uncover valuable insights. I'm particularly interested in the evolving landscape of the insurance industry and how innovative solutions can address complex challenges in risk assessment, claims processing, and customer engagement. My approach is rooted in clear communication, meticulous analysis, and a commitment to delivering stable, effective outcomes.</p>
-            </section>
+            </aside>
 
-            <section id="expertise">
-                <div class="section-title-container">
-                    <span class="geometric-accent accent-blue"></span>
-                    <h2>Core Strengths</h2>
-                </div>
-                <ul class="skills-list">
-                    <li>Data Analysis & Interpretation</li>
-                    <li>Python for Data Science & Automation</li>
-                    <li>Problem Solving & Critical Thinking</li>
-                    <li>Process Improvement & Optimization</li>
-                    <li>[Add another relevant skill, e.g., Actuarial Concepts or Regulatory Awareness]</li>
-                </ul>
-            </section>
+            <main class="main-content">
+                <section id="posts-list">
+                    <div class="section-title-container">
+                        <span class="geometric-accent accent-red"></span>
+                        <h2>Recent Articles & Insights</h2>
+                    </div>
 
-            <section id="projects">
-                <div class="section-title-container">
-                    <span class="geometric-accent accent-yellow"></span>
-                    <h2>Noteworthy Projects / Experience</h2>
-                </div>
-                <div class="project-card">
-                    <h3>Project Title / Previous Role</h3>
-                    <p class="project-subtitle">Briefly describe the context or company</p>
-                    <p>Key responsibilities and achievements. For example: Developed a Python script to automate [specific task], resulting in a [quantifiable improvement]. Analyzed [specific dataset] to identify trends in [area relevant to insurance, e.g., claims patterns], providing actionable recommendations.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Another Project / Academic Achievement</h3>
-                    <p class="project-subtitle">University coursework or personal project</p>
-                    <p>Focused on [specific subject, e.g., risk modeling or data visualization] using [tools/technologies]. This project demonstrated skills in [mention 1-2 key skills].</p>
-                </div>
-            </section>
+                    <article class="post-item">
+                        <h3 class="post-title"><a href="post-detail.html">The Future of Risk Assessment in P&C Insurance</a></h3>
+                        <p class="post-meta">
+                            <span class="post-date">May 7, 2025</span> | <span class="post-category">InsurTech</span>
+                        </p>
+                        <p class="post-excerpt">Exploring how AI and big data are revolutionizing traditional underwriting processes, leading to more accurate pricing and personalized policies. We delve into the challenges and opportunities ahead...</p>
+                        <a href="post-detail.html" class="read-more button-blue">Read More &rarr;</a>
+                    </article>
 
-            <section id="contact">
-                <div class="section-title-container">
-                     <span class="geometric-accent accent-red"></span>
-                    <h2>Connect</h2>
-                </div>
-                <p>I'm always open to discussing new opportunities and collaborations.</p>
-                <div class="contact-links">
-                    <a href="mailto:youremail@example.com" class="contact-button button-blue">Email Me</a>
-                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-button button-yellow">LinkedIn Profile</a>
-                    <a href="https://github.com/yourusername" target="_blank" class="contact-button button-red">GitHub Portfolio</a>
-                </div>
-            </section>
-        </main>
+                    <article class="post-item">
+                        <h3 class="post-title"><a href="post-detail.html">Python for Claims Automation: A Practical Guide</a></h3>
+                        <p class="post-meta">
+                            <span class="post-date">April 22, 2025</span> | <span class="post-category">Development, Automation</span>
+                        </p>
+                        <p class="post-excerpt">A look at how Python scripting can streamline repetitive tasks in claims processing, from initial data entry verification to fraud detection flags, ultimately reducing costs and improving adjuster efficiency.</p>
+                        <a href="post-detail.html" class="read-more button-blue">Read More &rarr;</a>
+                    </article>
 
-        <footer>
-            <p>&copy; 2025 Your Name. Designed with a nod to modern professionalism.</p>
+                    <article class="post-item">
+                        <h3 class="post-title"><a href="post-detail.html">Communicating Complex Data to Non-Technical Stakeholders</a></h3>
+                        <p class="post-meta">
+                            <span class="post-date">March 15, 2025</span> | <span class="post-category">Communication, Data Science</span>
+                        </p>
+                        <p class="post-excerpt">Strategies and tools for effectively presenting complex analytical findings to business leaders and clients in the insurance industry, ensuring clarity and driving informed decision-making.</p>
+                        <a href="post-detail.html" class="read-more button-blue">Read More &rarr;</a>
+                    </article>
+                     </section>
+            </main>
+        </div>
+
+        <footer class="site-footer">
+            <p>&copy; 2025 Your Name. Focused on clarity and innovation.</p>
         </footer>
     </div>
 </body>
