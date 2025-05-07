@@ -1,122 +1,105 @@
-/* --- Base Styles & Fonts --- */
+/* --- Base Styles & Fonts (Browser Defaults) --- */
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.7;
-    color: #333;
+    /* font-family: 'Poppins', sans-serif; */ /* Removed custom font */
+    line-height: 1.6; /* Good for readability */
+    /* color: #333; */ /* Default browser text color */
     margin: 0;
     padding: 0;
-    background-color: #f7f9fc; /* Light, neutral background */
-    font-weight: 300;
+    /* background-color: #f7f9fc; */ /* Default white background */
+    /* font-weight: 300; */ /* Default font weight */
 }
 
 .page-container {
-    max-width: 1200px; /* Max width for the entire page */
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: #fff; /* White background for the content area */
-    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    /* background-color: #fff; */ /* Default white background */
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.05); */ /* Removed shadow */
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    color: #1D3557; /* Deep, stable blue */
+    /* font-family: 'Roboto Slab', serif; */ /* Removed custom font */
+    /* font-weight: 700; */ /* Default heading weight is usually bold */
+    /* color: #1D3557; */ /* Default browser text color */
 }
 
 h1 {
-    font-size: 2.5em; /* Slightly adjusted for new layout */
+    font-size: 2.5em;
     margin-bottom: 0.1em;
-    letter-spacing: -1px;
+    letter-spacing: -1px; /* Kept for style if desired, or remove */
 }
 
-h2 { /* Main section titles in main content */
+h2 {
     font-size: 2em;
     margin-bottom: 0.8em;
     padding-bottom: 0.3em;
 }
 
-h3 { /* Sidebar titles & Post titles */
+h3 {
     font-size: 1.3em;
     margin-bottom: 0.5em;
 }
 
-h4 { /* Smaller titles, like in sidebar info */
+h4 {
     font-size: 1.1em;
-    color: #457B9D;
     margin-bottom: 0.3em;
 }
 
 p {
     margin-bottom: 1em;
-    color: #555;
+    /* color: #555; */ /* Default browser text color */
 }
 
 a {
-    color: #E63946; /* Memphis-inspired red for general links */
-    text-decoration: none;
-    font-weight: 600;
+    /* color: #E63946; */ /* Default browser link color (usually blue) */
+    text-decoration: none; /* Often default, but can keep */
+    /* font-weight: 600; */ /* Default link weight */
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Common default hover behavior */
 }
 
-/* --- Site Header (Above Sidebar & Main Content) --- */
+/* --- Site Header --- */
 .site-header {
-    background-color: #fff;
-    padding: 40px 30px 30px; /* Reduced padding slightly */
+    /* background-color: #fff; */
+    padding: 40px 30px 30px;
     text-align: center;
-    border-bottom: 3px solid #1D3557; /* Stable blue bottom border */
+    border-bottom: 1px solid #ccc; /* Simple gray border */
 }
 
 .tagline {
     font-size: 1.1em;
-    color: #4A4A4A;
-    font-weight: 300;
+    /* color: #4A4A4A; */
     margin-top: 0;
 }
 
 /* --- Content Wrapper (For Sidebar & Main Content Flex Layout) --- */
 .content-wrapper {
     display: flex;
-    padding: 20px 15px; /* Padding around the two columns */
+    padding: 20px 15px;
 }
 
 /* --- Sidebar --- */
 .sidebar {
-    width: 230px; /* Fixed width for the small sidebar */
-    flex-shrink: 0; /* Prevents sidebar from shrinking */
+    width: 230px;
+    flex-shrink: 0;
     padding-right: 20px;
-    border-right: 1px solid #e0e0e0; /* Subtle separator */
-    position: relative; /* For positioning the accent shape */
+    border-right: 1px solid #ccc; /* Simple gray separator */
+    position: relative; /* Kept for potential future sticky content or accents */
 }
 
-.sidebar-sticky-content { /* If you want the sidebar content to stick on scroll (needs more JS for true sticky) */
+.sidebar-sticky-content {
     position: sticky;
     top: 20px;
 }
 
-.sidebar-accent { /* Memphis decorative shape */
-    position: absolute;
-    top: 10px;
-    left: -5px; /* Slightly off canvas */
-    width: 60px;
-    height: 60px;
-    opacity: 0.7;
-    z-index: 0;
-}
-.shape-yellow {
-    background-color: #FDCB6E;
-    clip-path: circle(50%);
-}
-
+/* Removed .sidebar-accent styles */
 
 .sidebar-nav {
     margin-bottom: 30px;
-    position: relative; /* To be above the accent */
-    z-index: 1;
 }
 .sidebar-nav h3 {
-    color: #457B9D;
-    border-bottom: 2px solid #A8DADC; /* Light Teal accent */
+    /* color: #457B9D; */
+    border-bottom: 1px solid #ddd; /* Simple gray border */
     padding-bottom: 0.4em;
     margin-bottom: 0.6em;
 }
@@ -129,68 +112,60 @@ a:hover {
     display: block;
     padding: 10px 15px;
     margin-bottom: 5px;
-    border-radius: 5px;
-    color: #1D3557;
-    font-weight: 600;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 5px; /* Subtle styling, can remove if truly barebones needed */
+    /* color: #1D3557; */
+    /* font-weight: 600; */
+    /* transition: background-color 0.2s ease, color 0.2s ease; */ /* Can remove transition */
 }
 .sidebar-nav li a:hover {
-    background-color: #E63946; /* Red hover */
-    color: #fff;
-    text-decoration: none;
+    /* background-color: #E63946; */
+    /* color: #fff; */
+    text-decoration: underline;
 }
 .sidebar-nav li a.active {
-    background-color: #1D3557; /* Active link style */
-    color: #fff;
+    /* background-color: #1D3557; */
+    /* color: #fff; */
+    font-weight: bold; /* Simple active state */
 }
 
 .sidebar-info {
-    background-color: #f7f9fc;
+    /* background-color: #f7f9fc; */
     padding: 15px;
     border-radius: 5px;
     font-size: 0.9em;
-    position: relative; /* To be above the accent */
-    z-index: 1;
+    border: 1px solid #eee; /* Simple border for info box */
 }
 .sidebar-info p {
     margin-bottom: 0.5em;
     line-height: 1.5;
 }
 .sidebar-email {
-    font-weight: 600;
-    color: #1D3557;
+    /* font-weight: 600; */
+    /* color: #1D3557; */
 }
 
 /* --- Main Content --- */
 .main-content {
-    flex-grow: 1; /* Takes up remaining space */
-    padding-left: 30px; /* Space between sidebar and main content */
+    flex-grow: 1;
+    padding-left: 30px;
 }
 
-.section-title-container { /* Reused from previous design for consistency */
+.section-title-container {
     display: flex;
     align-items: center;
     margin-bottom: 1em;
 }
-.geometric-accent {
-    width: 12px;
-    height: 12px;
-    margin-right: 12px;
-    flex-shrink: 0;
-}
-.accent-red { background-color: #E63946; }
-.accent-blue { background-color: #457B9D; }
-.accent-yellow { background-color: #FDCB6E; }
+/* Removed .geometric-accent styles */
 
 
 /* Post Item Styling */
 .post-item {
-    background-color: #fff; /* Ensure posts have a white background if page-container is colored */
+    /* background-color: #fff; */
     padding: 25px;
     margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-    border-left: 5px solid #457B9D; /* Sophisticated blue accent */
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.07); */ /* Removed shadow */
+    border: 1px solid #ddd; /* Simple border for posts */
 }
 .post-item:last-child {
     margin-bottom: 0;
@@ -198,86 +173,84 @@ a:hover {
 
 .post-title {
     margin-top: 0;
-    color: #1D3557;
+    /* color: #1D3557; */
 }
 .post-title a {
-    color: inherit; /* Inherit color from h3 */
-    font-weight: 700; /* Ensure it uses h3 weight */
+    /* color: inherit; */
+    /* font-weight: 700; */
 }
 .post-title a:hover {
-    color: #E63946; /* Red hover for post titles */
+    /* color: #E63946; */
     text-decoration: underline;
 }
 
 .post-meta {
     font-size: 0.9em;
-    color: #777;
+    /* color: #777; */
     margin-bottom: 10px;
 }
 .post-date {
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 .post-category {
     font-style: italic;
-    color: #E63946; /* Red for category */
+    /* color: #E63946; */
 }
 .post-excerpt {
-    color: #555;
+    /* color: #555; */
     margin-bottom: 15px;
 }
 
-.read-more { /* Reusing button styles from before */
+.read-more {
     display: inline-block;
-    padding: 8px 18px; /* Slightly smaller for read more */
+    padding: 8px 18px;
     border-radius: 5px;
-    font-weight: 600;
+    /* font-weight: 600; */
     text-align: center;
-    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    /* transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; */
+    /* box-shadow: 0 1px 3px rgba(0,0,0,0.1); */
+    border: 1px solid #999; /* Simple button-like border */
+    background-color: #f0f0f0; /* Light gray background for button feel */
+    color: #333; /* Text color for button */
 }
 .read-more:hover {
-    transform: translateY(-2px);
+    /* transform: translateY(-2px); */
     text-decoration: none;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    /* box-shadow: 0 3px 8px rgba(0,0,0,0.15); */
+    background-color: #e0e0e0; /* Slightly darker on hover */
 }
-.button-blue { background-color: #1D3557; color: #fff !important; }
+/* Removed specific .button-blue type classes */
 
 
 /* --- Site Footer --- */
 .site-footer {
-    background-color: #fff;
+    /* background-color: #fff; */
     text-align: center;
     padding: 30px 20px;
     font-size: 0.9em;
-    color: #777;
-    border-top: 1px solid #e0e0e0;
-    margin-top: 20px; /* Reduced margin from main content */
+    /* color: #777; */
+    border-top: 1px solid #ccc; /* Simple gray border */
+    margin-top: 20px;
 }
 
-/* --- Responsive Adjustments --- */
-@media (max-width: 800px) { /* Adjust breakpoint as needed */
+/* --- Responsive Adjustments (Layout Only) --- */
+@media (max-width: 800px) {
     .content-wrapper {
-        flex-direction: column; /* Stack sidebar on top of main content */
+        flex-direction: column;
     }
     .sidebar {
-        width: 100%; /* Full width for sidebar */
+        width: 100%;
         padding-right: 0;
         border-right: none;
-        border-bottom: 1px solid #e0e0e0; /* Separator below stacked sidebar */
+        border-bottom: 1px solid #ccc; /* Separator below stacked sidebar */
         margin-bottom: 20px;
         padding-bottom: 20px;
     }
     .sidebar-sticky-content {
-        position: static; /* No sticky behavior on mobile */
-    }
-    .sidebar-accent {
-        top: 5px;
-        left: 5px;
-        width: 40px;
-        height: 40px;
+        position: static;
     }
     .main-content {
-        padding-left: 0; /* Remove padding when stacked */
+        padding-left: 0;
     }
     .site-header {
         padding: 30px 20px;
