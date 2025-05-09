@@ -11,16 +11,15 @@ body, html {
 
 /* Fixed Vertical Menu */
 .fixed-menu {
-    width: 200px; /* Adjust width as needed for a "very small" menu */
+    width: 100px; /* Adjust width as needed for a "very small" menu */
     height: 100vh; /* Full viewport height */
     position: fixed; /* Key for staying in place */
     top: 0;
     left: 0;
-    background-color: #f0f0f0; /* Basic menu background color */
+    background-color: #fff; /* Basic menu background color */
     padding: 20px;
     box-sizing: border-box; /* Includes padding in the width */
     overflow-y: auto; /* If menu content gets too long */
-    border-right: 1px solid #ddd; /* Subtle separator */
 }
 
 .fixed-menu .menu-title { /* Optional title in menu */
