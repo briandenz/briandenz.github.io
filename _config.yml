@@ -27,7 +27,7 @@ url: https://briandenz.github.io # the base hostname & protocol for your site, e
 github_username:  briandenz
 
 # Build settings
-theme: no-style-please
+theme: minima
 plugins:
 
 # Exclude from processing.
